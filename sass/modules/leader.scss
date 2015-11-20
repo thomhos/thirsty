@@ -1,0 +1,89 @@
+.module--leader {
+	position: relative;
+	padding: 0 !important;
+
+	.module--leader__image {
+		position: relative;
+		height: 100vh;
+		width: 100%;
+		overflow: hidden;
+	}
+
+	.module--leader__header {
+		position: absolute;
+		top: 20px;
+		left: 0;
+
+		width: 100%;
+		height: 100%;
+
+		padding: 40px;
+
+		text-align: center;
+
+		h2 {
+			font-size: 40px;
+			line-height: 60px;
+			color: $white;
+			margin-bottom: $spacing-xxl;
+		}
+	}
+}
+
+
+@include breakpoint(small) {
+	.module--leader {
+		position: relative;
+
+		.module--leader__header {
+			height: 60%;
+			top: 50%;
+			transform: translateY(-50%);
+
+			h2{
+				font-size: 60px;
+				line-height: 100px;
+			}
+
+			button {
+				font-size: 24px;
+			}
+		}
+	}
+}
+
+@include breakpoint(medium) {
+	.module--leader {
+		position: relative;
+
+		.module--leader__header {
+			top: 10%;
+			left: 50%;
+			transform: translateX(-50%);
+			max-width: 700px;
+
+			h2{
+				font-size: 70px;
+				line-height: 100px;
+			}
+		}
+	}
+}
+
+@include breakpoint(large) {
+	.module--leader {
+		position: relative;
+
+		.module--leader__header {
+			top: 10%;
+			left: 50%;
+			transform: translateX(-50%);
+			max-width: 900px;
+
+			h2{
+				font-size: 90px;
+				line-height: 130px;
+			}
+		}
+	}
+}

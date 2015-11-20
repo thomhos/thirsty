@@ -1,0 +1,22 @@
+{
+  "name": "thirsty",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Thom Hos"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}

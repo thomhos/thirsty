@@ -1,0 +1,54 @@
+.module--advantages {
+	font-size: 0;
+	line-height:0;
+
+	h2{
+		margin-bottom: 60px;
+	}
+
+	.module--advantages__item {
+		display: inline-block;
+		width: 100%;
+
+		margin-bottom: 60px;
+
+		text-align: center;
+
+		vertical-align: top;
+
+		.module--advantages__img{
+			margin-bottom: 20px;
+			height: 80px;
+		}
+
+		h3 {
+			color: $text-gray-dark;
+			margin-bottom: 10px;
+		}
+
+		p{
+			font-size: $font-size-md;
+			line-height: 30px;
+		}
+	}
+}
+
+
+@include breakpoint(mobile){
+	.module--advantages {
+		.module--advantages__item {
+			width: 50%;
+			padding: 0 20px;
+		}
+	}
+}
+
+
+
+@include breakpoint(small){
+	.module--advantages {
+		.module--advantages__item {
+			width: (100%/3);
+		}
+	}
+}

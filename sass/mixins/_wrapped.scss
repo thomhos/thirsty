@@ -1,0 +1,6 @@
+@mixin wrapped {
+  width: $site-width;
+	max-width: $site-width-wrapped;
+	margin-left: auto;
+	margin-right: auto;
+}

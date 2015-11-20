@@ -1,0 +1,72 @@
+.module--for-who {
+	position: relative;
+	height: 320px;
+}
+
+[class*='for-who__fill']{
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+}
+
+.for-who__fill--primary {
+	background-color: $for-who-primary;
+	opacity: .7;
+}
+
+.for-who__fill--secondary {
+	background-color: $for-who-secondary;
+	opacity: .7;
+}
+
+.for-who__content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	width: 80%;
+	transform: translate(-50%, -50%);
+
+	h2{
+		font-size: 32px;
+	}
+
+	p{
+		font-size: 18px;
+		line-height: 32px;
+	}
+}
+
+@include breakpoint(small) {
+
+	.for-who__content {
+		h2{
+			font-size: 48px;
+		}
+
+		p{
+			font-size: $font-size-lg;
+		}
+	}
+}
+
+@include breakpoint(medium) {
+	.module--for-who {
+		height: calc( 100vh - 50px );
+	}
+	
+	.for-who__content {
+		width: 70%;
+
+		h2{
+			font-size: 60px;
+		}
+
+		p{
+			font-size: $font-size-lg;
+		}
+	}
+}

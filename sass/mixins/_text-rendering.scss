@@ -1,0 +1,7 @@
+@mixin text-rendering {
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+	-khtml-font-smoothing: antialiased;
+	-apple-font-smoothing: antialiased;
+	font-smooth: always;
+}

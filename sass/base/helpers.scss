@@ -1,0 +1,38 @@
+.line-height-lg{
+    line-height: 50px;
+}
+
+.line-height-normal{
+	line-height: normal;
+}
+
+.text-gray{
+    color: $text-gray;
+}
+
+.text-white{
+	color: $white;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.no-offset {
+    margin: 0;
+}
+
+.offset-bottom-h2 {
+	margin-bottom: $spacing-xxl;
+}
+
+.offset-bottom-text {
+	margin-bottom: $spacing-lg*2;
+}
+
+
+@include breakpoint(small) {
+	.offset-bottom-text {
+		margin-bottom: $spacing-lg*4;
+	}
+}

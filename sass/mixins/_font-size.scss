@@ -1,0 +1,31 @@
+@mixin font-size($size) {
+    @if $size == base {
+        font-size: $font-size-base;
+        line-height: $line-height-base;
+    }
+
+    @else if $size == medium {
+        font-size: $font-size-medium;
+        line-height: $line-height-medium;
+    }
+
+    @else if $size == small {
+        font-size: $font-size-small;
+        line-height: $line-height-small;
+    }
+
+    @else if $size == big {
+        font-size: $font-size-big;
+        line-height: $line-height-big;
+    }
+
+    @else if $size == bigger {
+        font-size: $font-size-bigger;
+        line-height: $line-height-bigger;
+    }
+
+    @else if $size == extra-big {
+        font-size: $font-size-extra-big;
+        line-height: $line-height-extra-big;
+    }
+}

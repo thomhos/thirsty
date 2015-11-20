@@ -1,0 +1,90 @@
+.container {
+
+}
+
+.row {
+	font-size: 0;
+	line-height: 0;
+	margin-bottom: $spacing-xxl;
+
+	.col {
+		width: 100%;
+		padding: 20px;
+	}
+
+	.image-col {
+		width: 100%;
+	}
+
+	&.color-primary{
+		background-color: $yellow-primary;
+	}
+
+	&.color-gradient{
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffd519+0,ffe22f+69 */
+		background: #ffd519; /* Old browsers */
+		background: -moz-linear-gradient(left,  #ffd519 0%, #ffe22f 69%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left,  #ffd519 0%,#ffe22f 69%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right,  #ffd519 0%,#ffe22f 69%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd519', endColorstr='#ffe22f',GradientType=1 ); /* IE6-9 */
+	}
+
+	&.padded {
+		padding: 40px 40px;
+
+		.col{
+			padding: 0;
+		}
+	}
+
+	&.no-margin {
+		margin-bottom: 0;
+	}
+}
+
+.row.col-2 {
+	.col {
+		width: 100%;
+	}
+}
+
+@include breakpoint(small) {
+	.row{
+		.image-col {
+			width: 560px;
+			margin: 0 auto;
+		}
+	}
+}
+
+
+@include breakpoint(medium){
+	.row {
+		max-width: $page-width-md;
+		margin-left: auto;
+		margin-right: auto;
+
+		&.row-full {
+			max-width: none;
+		}
+
+		&.row-small {
+			max-width: $page-width-sm;
+		}
+
+		&.row-large {
+			max-width: $page-width-lg;
+		}
+
+		&.padded {
+			padding: 60px 40px;
+		}
+	}
+
+	.row.col-2 {
+		.col {
+			display: inline-block;
+			width: 50%;
+		}
+	}
+}

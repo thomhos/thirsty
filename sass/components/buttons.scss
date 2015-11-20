@@ -1,0 +1,66 @@
+button {
+    border: none;
+    background: none;
+}
+
+.button {
+    display: inline-block;
+    vertical-align: top;
+
+    position: relative;
+    opacity: 1;
+    z-index: 0;
+    overflow: hidden;
+
+    padding: 0px 20px;
+    border: 2px solid $yellow-primary;
+    background-color: $yellow-primary;
+    border-radius: 30px;
+
+    font-family: $ms-bold;
+    font-size: $font-size-md;
+    line-height: 46px;
+    text-decoration: none !important;
+    text-align: center;
+    color: $white;
+
+    cursor: pointer;
+
+    &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -2;
+
+        width: 100%;
+        height: 100%;
+        background-color: $yellow-primary;
+        content: "";
+    }
+
+    &:after {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: -1;
+
+        width: 100%;
+        height: 100%;
+        background-color: $white;
+        content: "";
+        transition: all 200ms ease-out;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &:hover:not(.button-disabled), &.active:not(.button-disabled) {
+        color: $yellow-primary;
+        text-shadow: none;
+
+        &:after {
+            top: 0;
+        }
+    }
+}
